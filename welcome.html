@@ -1,0 +1,12 @@
+<html>
+<body>
+<h1 id="quote" style='color:green;'>Hello world</h1>
+
+<script>
+var quote = ["Quote 1", "Quote 2","Quote 3", "Quote 4","Quote 5", "Quote 6","Quote 7", "Quote 8","Quote 9", "Quote 10"];
+var random = Math.floor((Math.random() * 10)+1);
+//alert(quote[random+1]);
+document.getElementById('quote').innerHTML=quote[random-1];
+</script>
+</body>
+</html>
