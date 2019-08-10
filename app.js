@@ -8,8 +8,8 @@ app.get('/', function(request, response){
 app.get('login', function(request, response){
     response.sendFile('welcome.html');
 });
+var port=process.env.PORT||8080;
 
-
-var serve=app.listen(3000, function (req, res){
-    console.log("inti call...");
+var serve=app.listen(port, function (req, res){
+    console.log("Access on location: http://localhost:"+port);
 });
